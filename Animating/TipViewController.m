@@ -24,8 +24,14 @@
 
 - (IBAction)dismiss:(id)sender
 {
-    [self.view removeFromSuperview];
-    [self removeFromParentViewController];
+    self.view.transform = CGAffineTransformIdentity;
+    [UIView animateWithDuration:3.0 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:5 options:UIViewAnimationOptionCurveLinear animations:^{
+        self.view.transform = CGAffineTransformMakeTranslation(0, 700);
+    } completion:^(BOOL finished) {
+        [self.view removeFromSuperview];
+        [self removeFromParentViewController];
+    }];
+   
 }
 
 
