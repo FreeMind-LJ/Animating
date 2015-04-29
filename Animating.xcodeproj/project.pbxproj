@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D168FCF1AF096A7002701AA /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D168FCE1AF096A7002701AA /* TipViewController.m */; };
 		6D1D594E1AEFAF05000951E4 /* boat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1D594D1AEFAF05000951E4 /* boat.jpg */; };
 		6D1D59521AEFAF5F000951E4 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D59511AEFAF5F000951E4 /* ImageViewController.m */; };
 		6D1D59561AEFB5DC000951E4 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D59551AEFB5DC000951E4 /* ModalViewController.m */; };
-		6D1D59591AEFB6C8000951E4 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D59581AEFB6C8000951E4 /* TipViewController.m */; };
 		6DE7B4031AE8BE4700DA57CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE7B4021AE8BE4700DA57CB /* main.m */; };
 		6DE7B4061AE8BE4700DA57CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE7B4051AE8BE4700DA57CB /* AppDelegate.m */; };
 		6DE7B40C1AE8BE4700DA57CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE7B40A1AE8BE4700DA57CB /* Main.storyboard */; };
@@ -33,13 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D168FCD1AF096A7002701AA /* TipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
+		6D168FCE1AF096A7002701AA /* TipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
 		6D1D594D1AEFAF05000951E4 /* boat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boat.jpg; sourceTree = "<group>"; };
 		6D1D59501AEFAF5F000951E4 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		6D1D59511AEFAF5F000951E4 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		6D1D59541AEFB5DC000951E4 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		6D1D59551AEFB5DC000951E4 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
-		6D1D59571AEFB6C8000951E4 /* TipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
-		6D1D59581AEFB6C8000951E4 /* TipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
 		6DE7B3FD1AE8BE4700DA57CB /* Animating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE7B4011AE8BE4700DA57CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DE7B4021AE8BE4700DA57CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,8 +91,8 @@
 			children = (
 				6D1D59541AEFB5DC000951E4 /* ModalViewController.h */,
 				6D1D59551AEFB5DC000951E4 /* ModalViewController.m */,
-				6D1D59571AEFB6C8000951E4 /* TipViewController.h */,
-				6D1D59581AEFB6C8000951E4 /* TipViewController.m */,
+				6D168FCD1AF096A7002701AA /* TipViewController.h */,
+				6D168FCE1AF096A7002701AA /* TipViewController.m */,
 			);
 			name = ModalViewController;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 			files = (
 				6D1D59521AEFAF5F000951E4 /* ImageViewController.m in Sources */,
 				6DE7B4471AE8DEAD00DA57CB /* DragViewController.m in Sources */,
-				6D1D59591AEFB6C8000951E4 /* TipViewController.m in Sources */,
+				6D168FCF1AF096A7002701AA /* TipViewController.m in Sources */,
 				6D1D59561AEFB5DC000951E4 /* ModalViewController.m in Sources */,
 				6DE7B4061AE8BE4700DA57CB /* AppDelegate.m in Sources */,
 				6DE7B43E1AE8C2F600DA57CB /* ListViewController.m in Sources */,

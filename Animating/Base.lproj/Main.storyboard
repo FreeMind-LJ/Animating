@@ -136,12 +136,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yx6-mg-9Ar">
-                                <rect key="frame" x="99" y="225" width="123" height="30"/>
+                                <rect key="frame" x="35" y="225" width="123" height="30"/>
                                 <state key="normal" title="弹出Modal控制器 ">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="presentModalController:" destination="Mof-uz-Nru" eventType="touchUpInside" id="S3n-I7-ViS"/>
+                                    <action selector="presentModalController:" destination="Mof-uz-Nru" eventType="touchUpInside" id="Zsd-mU-F0X"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -151,6 +152,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3u1-Ay-rZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="653" y="1361"/>
+        </scene>
+        <!--Tip View Controller-->
+        <scene sceneID="epP-vZ-Vaz">
+            <objects>
+                <viewController storyboardIdentifier="TipViewController" id="OsV-zG-zwa" customClass="TipViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gcb-9Q-d2I"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wnn-i2-gki"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" alpha="0.89999999999999991" contentMode="scaleToFill" id="QbS-Oj-pix">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3YI-JI-Pkx">
+                                <rect key="frame" x="75" y="137" width="170" height="206"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzx-XY-deT">
+                                        <rect key="frame" x="56" y="168" width="52" height="30"/>
+                                        <state key="normal" title="dismiss">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dismiss:" destination="OsV-zG-zwa" eventType="touchUpInside" id="zcW-te-raC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="tipView" destination="3YI-JI-Pkx" id="ZKn-Bg-yeQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6me-iM-HVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="1366"/>
         </scene>
         <!--按钮动画-->
         <scene sceneID="YCw-OE-mUA">
