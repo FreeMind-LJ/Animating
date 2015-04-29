@@ -54,7 +54,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9gD-NR-bbv" id="DES-uo-uu0">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fWh-Ck-hZV">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="图片动画" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fWh-Ck-hZV">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -62,6 +62,26 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="2SD-o7-Dth" kind="show" id="QvP-hW-02x"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ListAnimationsCell" textLabel="bKP-Rf-Ckf" style="IBUITableViewCellStyleDefault" id="Rso-be-vJz">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rso-be-vJz" id="Zfp-xS-rtr">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="modal动画" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bKP-Rf-Ckf">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Mof-uz-Nru" kind="show" id="AiU-ZA-PP9"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -76,6 +96,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVO-MF-Iuj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="254" y="664"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="7Iy-L5-pfp">
+            <objects>
+                <viewController id="2SD-o7-Dth" customClass="ImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GQy-0o-jBf"/>
+                        <viewControllerLayoutGuide type="bottom" id="eWd-6w-Kfg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N4z-hc-8hD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boat.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vPj-s6-toD">
+                                <rect key="frame" x="95" y="195" width="120" height="80"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="vPj-s6-toD" id="Ras-nW-nMk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRd-kb-2Ku" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273" y="1361"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="s6H-1i-9gy">
+            <objects>
+                <viewController id="Mof-uz-Nru" customClass="ModalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RDa-CN-Wac"/>
+                        <viewControllerLayoutGuide type="bottom" id="I49-3c-ykq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BS1-po-Bsf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yx6-mg-9Ar">
+                                <rect key="frame" x="99" y="225" width="123" height="30"/>
+                                <state key="normal" title="弹出Modal控制器 ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentModalController:" destination="Mof-uz-Nru" eventType="touchUpInside" id="S3n-I7-ViS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3u1-Ay-rZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="1361"/>
         </scene>
         <!--按钮动画-->
         <scene sceneID="YCw-OE-mUA">
@@ -117,10 +192,10 @@
             </objects>
             <point key="canvasLocation" x="659" y="664"/>
         </scene>
-        <!--拖动动画-->
+        <!--衰减动画-->
         <scene sceneID="QC0-Vk-vtZ">
             <objects>
-                <viewController id="xDl-Q7-Wm2" userLabel="拖动动画" customClass="DragViewController" sceneMemberID="viewController">
+                <viewController id="xDl-Q7-Wm2" userLabel="衰减动画" customClass="DragViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CaJ-FA-9ES"/>
                         <viewControllerLayoutGuide type="bottom" id="pmY-Eb-QlV"/>
@@ -145,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hd1-mA-wqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2" y="1239"/>
+            <point key="canvasLocation" x="-85" y="1239"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pww-6S-Crk">
@@ -171,4 +246,7 @@
             <point key="canvasLocation" x="-149" y="664"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="boat.jpg" width="640" height="480"/>
+    </resources>
 </document>
