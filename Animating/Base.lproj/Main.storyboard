@@ -83,6 +83,23 @@
                                             <segue destination="Mof-uz-Nru" kind="show" id="AiU-ZA-PP9"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ListAnimationsCell" textLabel="byC-ue-8yP" style="IBUITableViewCellStyleDefault" id="6le-qx-Q5a">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6le-qx-Q5a" id="Gdc-7e-y0K">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="paper菜单动画" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="byC-ue-8yP">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="z4O-YO-Ms9" kind="show" id="gBG-kL-u3g"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -231,7 +248,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yf-fi-wp8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="659" y="664"/>
+            <point key="canvasLocation" x="645" y="577"/>
+        </scene>
+        <!--Paper Menu View Controller-->
+        <scene sceneID="90E-nf-gvd">
+            <objects>
+                <viewController id="z4O-YO-Ms9" customClass="PaperMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zPR-oF-SNU"/>
+                        <viewControllerLayoutGuide type="bottom" id="xve-BB-ZvD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xp0-Le-ipi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0br-hP-J5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="775"/>
         </scene>
         <!--衰减动画-->
         <scene sceneID="QC0-Vk-vtZ">
