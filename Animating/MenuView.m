@@ -67,14 +67,9 @@
     } completion:^(BOOL finished) {
         
         [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.3 initialSpringVelocity:10 options:UIViewAnimationOptionCurveLinear animations:^{
-            [_topView setTransform:CGAffineTransformMakeRotation(3.1415/4)] ;;
+            [_topView setTransform:CGAffineTransformMakeRotation(3.1415/4)] ;
+            [_bottomView setTransform:CGAffineTransformMakeRotation(-3.1415/4)] ;
         } completion:nil];
-        
-        [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.3 initialSpringVelocity:10 options:UIViewAnimationOptionCurveLinear animations:^{
-            [_bottomView setTransform:CGAffineTransformMakeRotation(-3.1415/4)] ;;
-        } completion:^(BOOL finished) {
-        }];
-        
     }];
     
 
@@ -85,19 +80,16 @@
     //恢复
     _topView.transform = CGAffineTransformIdentity;
     _bottomView.transform = CGAffineTransformIdentity;
-    
     [UIView animateWithDuration:0.5
                           delay:0
          usingSpringWithDamping:0.3
           initialSpringVelocity:10
-                        options:UIViewAnimationOptionCurveLinear animations:^{
-                            _topView.frame = CGRectMake(_topView.frame.origin.x, _topView.frame.origin.y-10, _topView.frame.size.width, _topView.frame.size.height);
-                            _bottomView.frame = CGRectMake(_bottomView.frame.origin.x, _bottomView.frame.origin.y+10, _bottomView.frame.size.width, _bottomView.frame.size.height);
-
-        } completion:^(BOOL finished) {
-            _topView.transform = CGAffineTransformIdentity;
-            _bottomView.transform = CGAffineTransformIdentity;
-        }];
+                        options:UIViewAnimationOptionCurveLinear
+                     animations:^{
+                         _topView.frame = CGRectMake(_topView.frame.origin.x, _topView.frame.origin.y-10, _topView.frame.size.width, _topView.frame.size.height);
+                         _bottomView.frame = CGRectMake(_bottomView.frame.origin.x, _bottomView.frame.origin.y+10, _bottomView.frame.size.width, _bottomView.frame.size.height);
+        }
+                     completion:nil];
     
     _middleView.hidden = NO;
 }
