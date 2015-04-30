@@ -78,14 +78,15 @@
 -(void)TwoLinesToThreeAnimate
 {
     //恢复
-    _topView.transform = CGAffineTransformIdentity;
-    _bottomView.transform = CGAffineTransformIdentity;
     [UIView animateWithDuration:0.5
                           delay:0
          usingSpringWithDamping:0.3
           initialSpringVelocity:10
                         options:UIViewAnimationOptionCurveLinear
                      animations:^{
+                         //旋转复原
+                         _topView.transform = CGAffineTransformIdentity;
+                         _bottomView.transform = CGAffineTransformIdentity;
                          _topView.frame = CGRectMake(_topView.frame.origin.x, _topView.frame.origin.y-10, _topView.frame.size.width, _topView.frame.size.height);
                          _bottomView.frame = CGRectMake(_bottomView.frame.origin.x, _bottomView.frame.origin.y+10, _bottomView.frame.size.width, _bottomView.frame.size.height);
         }
