@@ -11,6 +11,7 @@
 		6D1D594E1AEFAF05000951E4 /* boat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D1D594D1AEFAF05000951E4 /* boat.jpg */; };
 		6D1D59521AEFAF5F000951E4 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D59511AEFAF5F000951E4 /* ImageViewController.m */; };
 		6D1D59561AEFB5DC000951E4 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1D59551AEFB5DC000951E4 /* ModalViewController.m */; };
+		6D3439041AFB45730005B41E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3439031AFB45730005B41E /* QuartzCore.framework */; };
 		6DB297FF1AF0DA83003DC92A /* PaperMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB297FE1AF0DA83003DC92A /* PaperMenuViewController.m */; };
 		6DB298051AF0F7D9003DC92A /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB298041AF0F7D9003DC92A /* MenuView.m */; };
 		6DE7B4031AE8BE4700DA57CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE7B4021AE8BE4700DA57CB /* main.m */; };
@@ -22,6 +23,7 @@
 		6DE7B43E1AE8C2F600DA57CB /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE7B43D1AE8C2F600DA57CB /* ListViewController.m */; };
 		6DE7B4431AE8C7C500DA57CB /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE7B4421AE8C7C500DA57CB /* ButtonViewController.m */; };
 		6DE7B4471AE8DEAD00DA57CB /* DragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE7B4461AE8DEAD00DA57CB /* DragViewController.m */; };
+		6DF641561AFA08DC000B895E /* FoldingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF641551AFA08DC000B895E /* FoldingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,7 @@
 		6D1D59511AEFAF5F000951E4 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		6D1D59541AEFB5DC000951E4 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		6D1D59551AEFB5DC000951E4 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		6D3439031AFB45730005B41E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6DB297FD1AF0DA83003DC92A /* PaperMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperMenuViewController.h; sourceTree = "<group>"; };
 		6DB297FE1AF0DA83003DC92A /* PaperMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperMenuViewController.m; sourceTree = "<group>"; };
 		6DB298031AF0F7D9003DC92A /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 		6DE7B4421AE8C7C500DA57CB /* ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
 		6DE7B4451AE8DEAD00DA57CB /* DragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragViewController.h; sourceTree = "<group>"; };
 		6DE7B4461AE8DEAD00DA57CB /* DragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragViewController.m; sourceTree = "<group>"; };
+		6DF641541AFA08DC000B895E /* FoldingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldingViewController.h; sourceTree = "<group>"; };
+		6DF641551AFA08DC000B895E /* FoldingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D3439041AFB45730005B41E /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +123,7 @@
 		6DE7B3F41AE8BE4700DA57CB = {
 			isa = PBXGroup;
 			children = (
+				6D3439031AFB45730005B41E /* QuartzCore.framework */,
 				6DE7B3FF1AE8BE4700DA57CB /* Animating */,
 				6DE7B4191AE8BE4700DA57CB /* AnimatingTests */,
 				6DE7B3FE1AE8BE4700DA57CB /* Products */,
@@ -178,6 +185,7 @@
 		6DE7B43F1AE8C79300DA57CB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6DF641531AFA08C5000B895E /* Folding */,
 				6DB297FC1AF0DA67003DC92A /* PaperMenu */,
 				6D1D59531AEFB5C1000951E4 /* ModalViewController */,
 				6D1D594F1AEFAF42000951E4 /* ImageViewController */,
@@ -203,6 +211,15 @@
 				6DE7B4461AE8DEAD00DA57CB /* DragViewController.m */,
 			);
 			name = DragViewController;
+			sourceTree = "<group>";
+		};
+		6DF641531AFA08C5000B895E /* Folding */ = {
+			isa = PBXGroup;
+			children = (
+				6DF641541AFA08DC000B895E /* FoldingViewController.h */,
+				6DF641551AFA08DC000B895E /* FoldingViewController.m */,
+			);
+			name = Folding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +325,7 @@
 			files = (
 				6D1D59521AEFAF5F000951E4 /* ImageViewController.m in Sources */,
 				6DE7B4471AE8DEAD00DA57CB /* DragViewController.m in Sources */,
+				6DF641561AFA08DC000B895E /* FoldingViewController.m in Sources */,
 				6D168FCF1AF096A7002701AA /* TipViewController.m in Sources */,
 				6D1D59561AEFB5DC000951E4 /* ModalViewController.m in Sources */,
 				6DE7B4061AE8BE4700DA57CB /* AppDelegate.m in Sources */,
