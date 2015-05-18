@@ -14,6 +14,8 @@
 		6D3439041AFB45730005B41E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3439031AFB45730005B41E /* QuartzCore.framework */; };
 		6DB297FF1AF0DA83003DC92A /* PaperMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB297FE1AF0DA83003DC92A /* PaperMenuViewController.m */; };
 		6DB298051AF0F7D9003DC92A /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB298041AF0F7D9003DC92A /* MenuView.m */; };
+		6DE756EA1B0A1DC800F46EA1 /* ActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE756E91B0A1DC800F46EA1 /* ActivityIndicatorView.m */; };
+		6DE756ED1B0A1DD600F46EA1 /* ActivityIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE756EC1B0A1DD600F46EA1 /* ActivityIndicatorViewController.m */; };
 		6DE7B4031AE8BE4700DA57CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE7B4021AE8BE4700DA57CB /* main.m */; };
 		6DE7B4061AE8BE4700DA57CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE7B4051AE8BE4700DA57CB /* AppDelegate.m */; };
 		6DE7B40C1AE8BE4700DA57CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE7B40A1AE8BE4700DA57CB /* Main.storyboard */; };
@@ -49,6 +51,10 @@
 		6DB297FE1AF0DA83003DC92A /* PaperMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperMenuViewController.m; sourceTree = "<group>"; };
 		6DB298031AF0F7D9003DC92A /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
 		6DB298041AF0F7D9003DC92A /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
+		6DE756E81B0A1DC800F46EA1 /* ActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityIndicatorView.h; sourceTree = "<group>"; };
+		6DE756E91B0A1DC800F46EA1 /* ActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicatorView.m; sourceTree = "<group>"; };
+		6DE756EB1B0A1DD600F46EA1 /* ActivityIndicatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityIndicatorViewController.h; sourceTree = "<group>"; };
+		6DE756EC1B0A1DD600F46EA1 /* ActivityIndicatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicatorViewController.m; sourceTree = "<group>"; };
 		6DE7B3FD1AE8BE4700DA57CB /* Animating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE7B4011AE8BE4700DA57CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DE7B4021AE8BE4700DA57CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -120,6 +126,17 @@
 			name = PaperMenu;
 			sourceTree = "<group>";
 		};
+		6DE756E71B0A1D8F00F46EA1 /* ActivityIndicatorViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6DE756E81B0A1DC800F46EA1 /* ActivityIndicatorView.h */,
+				6DE756E91B0A1DC800F46EA1 /* ActivityIndicatorView.m */,
+				6DE756EB1B0A1DD600F46EA1 /* ActivityIndicatorViewController.h */,
+				6DE756EC1B0A1DD600F46EA1 /* ActivityIndicatorViewController.m */,
+			);
+			name = ActivityIndicatorViewController;
+			sourceTree = "<group>";
+		};
 		6DE7B3F41AE8BE4700DA57CB = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +202,7 @@
 		6DE7B43F1AE8C79300DA57CB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6DE756E71B0A1D8F00F46EA1 /* ActivityIndicatorViewController */,
 				6DF641531AFA08C5000B895E /* Folding */,
 				6DB297FC1AF0DA67003DC92A /* PaperMenu */,
 				6D1D59531AEFB5C1000951E4 /* ModalViewController */,
@@ -330,8 +348,10 @@
 				6D1D59561AEFB5DC000951E4 /* ModalViewController.m in Sources */,
 				6DE7B4061AE8BE4700DA57CB /* AppDelegate.m in Sources */,
 				6DE7B43E1AE8C2F600DA57CB /* ListViewController.m in Sources */,
+				6DE756EA1B0A1DC800F46EA1 /* ActivityIndicatorView.m in Sources */,
 				6DE7B4431AE8C7C500DA57CB /* ButtonViewController.m in Sources */,
 				6DE7B4031AE8BE4700DA57CB /* main.m in Sources */,
+				6DE756ED1B0A1DD600F46EA1 /* ActivityIndicatorViewController.m in Sources */,
 				6DB297FF1AF0DA83003DC92A /* PaperMenuViewController.m in Sources */,
 				6DB298051AF0F7D9003DC92A /* MenuView.m in Sources */,
 			);
