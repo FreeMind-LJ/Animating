@@ -15,4 +15,5 @@
 ![image](https://github.com/FreeMind-LJ/Animating/blob/master/gif/paper%E5%8A%A8%E7%94%BB.gif)
 
 ###indicator动画
+
 ![image](https://github.com/FreeMind-LJ/Animating/blob/master/gif/indicator%E5%8A%A8%E7%94%BB.gif)
