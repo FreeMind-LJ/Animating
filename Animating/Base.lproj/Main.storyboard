@@ -318,17 +318,8 @@
                                 <rect key="frame" x="124" y="208" width="72" height="64"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUB-te-ns7">
-                                <rect key="frame" x="109" y="328" width="102" height="30"/>
-                                <state key="normal" title="start animating">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="start:" destination="NcR-dz-hcT" eventType="touchUpInside" id="O8o-0c-ImW"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttn-nE-qar">
-                                <rect key="frame" x="109" y="366" width="102" height="30"/>
+                                <rect key="frame" x="109" y="392" width="102" height="30"/>
                                 <state key="normal" title="stop animating">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -336,11 +327,27 @@
                                     <action selector="stop:" destination="NcR-dz-hcT" eventType="touchUpInside" id="bio-ew-It1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="loading..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfp-hl-Leo">
+                                <rect key="frame" x="124" y="299" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUB-te-ns7">
+                                <rect key="frame" x="108" y="360" width="102" height="30"/>
+                                <state key="normal" title="start animating">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="NcR-dz-hcT" eventType="touchUpInside" id="O8o-0c-ImW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="sxJ-ab-2da" id="VVq-xi-cEU"/>
+                        <outlet property="loading" destination="bfp-hl-Leo" id="miD-cs-aYa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HzH-ik-3SD" userLabel="First Responder" sceneMemberID="firstResponder"/>

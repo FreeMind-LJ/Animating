@@ -12,6 +12,7 @@
 @interface ActivityIndicatorViewController ()
 
 @property (weak, nonatomic) IBOutlet ActivityIndicatorView *activityIndicator;
+@property (weak, nonatomic) IBOutlet UILabel *loading;
 
 @end
 
@@ -19,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _loading.hidden = YES;
     // Do any additional setup after loading the view.
 }
 
@@ -29,10 +31,12 @@
 
 - (IBAction)start:(id)sender {
     [_activityIndicator startAnimating];
+    _loading.hidden = NO;
 }
 
 - (IBAction)stop:(id)sender {
     if (_activityIndicator.isAnimating) {
+        _loading.hidden = YES;
         [_activityIndicator stopAnimating];
     }
 }
